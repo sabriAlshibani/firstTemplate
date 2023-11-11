@@ -79,6 +79,13 @@ body {
 /*start header*/
 .header {
     padding:20px;
+    position: fixed;
+    z-index: 99999;
+    right:0;
+    left: 0;
+    top: 0;
+    background-color:  var(--section-background);
+    box-shadow: 8px 0 8px var(--secondry-color) ;
 }
 .header .container {
     display: flex;
@@ -106,17 +113,19 @@ justify-content: flex-end;
     height: 2px;
 }
 .header .links .icon span:first-child {
-    height: 3px;
+    height: 2px;
     width: 100%;
 }
 
 .header .links .icon span:nth-child(2) {
-    height: 3px;
+    height: 2px;
     width: 60%;
+    transition-property: width;
+    transition-duration: .4s;
 }
 
 .header .links .icon span:last-child {
-    height: 3px;
+    height: 2px;
     width: 100%;
 }
 .header .links ul {
@@ -126,7 +135,7 @@ justify-content: flex-end;
     position: absolute;
     /* not understand */
     right: 0;
-    background-color: var(--section-background);
+    background-color:var(--secondry-color);
     min-width: 200px;
     /* not understand */
     top:calc(100% + 15px);
@@ -150,7 +159,7 @@ justify-content: flex-end;
     display: block;
     text-decoration: none;
     padding: 15px;
-    color: #222;
+    color: #fffafa;
     transition: 0.3s;
 }
 .header .links ul li a:hover {
@@ -168,11 +177,12 @@ justify-content: flex-end;
     background-size: cover;
     height:calc(100vh - 64px);
     position:relative;
+    height: 100vh;
 }
 .landing .intero-text {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     width: 320px;
     max-width: 100%;
     transform: translate(-50%, -50%);
