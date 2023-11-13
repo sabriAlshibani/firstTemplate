@@ -166,7 +166,7 @@ justify-content: flex-end;
     padding-left: 25px;
 }
 .header .links ul li:not(:last-child) {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid rgba(250, 241, 241, 0.2);
 }
 
 /*end header*/
