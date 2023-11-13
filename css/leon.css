@@ -188,11 +188,17 @@ justify-content: flex-end;
     transform: translate(-50%, -50%);
     text-align: center;
 }
+@media (max-width: 767px) {
+    .landing .intero-text {
+        top: 30%;
+    }
+}
 .landing .intero-text h1 {
     margin: 0;
     font-weight: bold;
     font-size: 50px;
     color:var(--min-color);
+    text-transform: capitalize;
 }
 .landing .intero-text p {
     font-size: 19px;
