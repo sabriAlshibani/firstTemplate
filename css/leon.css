@@ -85,7 +85,7 @@ body {
     left: 0;
     top: 0;
     background-color:  var(--section-background);
-    box-shadow: 8px 0 8px var(--secondry-color) ;
+    box-shadow: 0 0 8px var(--secondry-color) ;
 }
 .header .container {
     display: flex;
